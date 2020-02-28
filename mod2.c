@@ -1,0 +1,57 @@
+# include <stdio.h>
+int main ()
+{
+	int a[100],b[100],m,n,i,j,k,l,temp;
+	printf ("Program to Perform Inplace Merge Sort\n");
+	printf ("Enter the size of array A\n");
+	scanf ("%d",&n);
+	printf ("Enter the size of array B\n");
+	scanf ("%d",&m);
+	printf ("Enter %d elements of array A in sorted form\n",n);
+	for (i = 0;i < n;i++)
+		scanf ("%d",&a[i]);
+	printf ("Enter %d elements of array B in sorted form\n",m);
+	for (i = 0;i < m;i++)
+		scanf ("%d",&b[i]);
+	printf ("Before Merge sorting:\nA:\t");
+	for (i = 0;i < n;i++)
+		printf ("%d\t",a[i]);
+	printf ("\nB:\t");
+	for (i = 0;i < m;i++)
+		printf ("%d\t",b[i]);
+	printf ("\n");
+	for (i = 0;i < n;i++)
+	{
+		for (j = 0;j < m;j++)
+		{
+			if (a[i] > b[j])
+			{
+				temp = a[i];
+				a[i] = b[j];
+				b[j] = temp;
+				for (k =1;k < m;k++)
+				{
+					l = k;
+					while (l >= 1)
+					{
+						if (b[l] < b[l-1])
+						{
+							temp = b[l];
+							b[l] = b[l-1];
+							b[l-1] = temp;
+						}
+						l--;
+					}
+				}
+			}
+		}
+	}
+	printf ("After Merge Sort\nA:\t");
+	for (i = 0;i < n;i++)
+		printf ("%d\t",a[i]);
+	printf ("\nB:\t");
+	for (i = 0;i < m;i++)
+		printf ("%d\t",b[i]);
+	printf ("\n");
+	return 0;
+}
