@@ -1,0 +1,14 @@
+OUTPUT OF PROGRAM WITH SAMPLE DATA
+INPUT
+Enter the value of m 7
+Enter the value of n 10
+Enter the elements of array a 6 10 12 14 16 25 35
+Enter the elements of array b 4 15 19 30 55 75 88 95 100 152
+OUTPUT
+A = 4 6 10 12 14 15 16
+B = 19 25 30 35 55 75 88 95 100 152
+
+TOTAL NUMBER OF BASIC OPERATIONS COMPUTATION OF TIME COMPLEXITY
+1. Comparison and Swapping.
+2. Time complexity of the program is O(mXn).
+
