@@ -36,9 +36,7 @@ LEARNT FROM THIS ASSIGNMENT
 2.Solving the problem mathematically.
 3.How to write clean code. 
 
-OUTPUT 
-
 OPERATION
 1. The number of basic operations performed is given with the output.
-2. The time complexity for the problems is given in the form of comment in the source code.RI
+2. The time complexity for the problems is given in the form of comment in the source code.
 
