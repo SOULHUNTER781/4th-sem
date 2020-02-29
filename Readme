@@ -11,12 +11,11 @@ NAME				              CONTRIBUTION
 3.Sujay GS 			          Problem Logic and Coding(4th program and 1st program).
 
 INSTRUCTIONS
-1.After the compilation.
-2.Enter the value of m.
-3.Enter the value of n.
-4.Enter the elements into array a.
-5.Enter the elements into array b.
-6.Press the ENTER Key to generate required output.
+1.After compiling the program.
+2.Enter the size and values of array a and b through command line argument.
+Eg. ./a.out 4 4 6 10 15 19 3 4 5 20.
+3.Make sure that the values entered in the commnad line into array a and b are in sorted order.
+4..Press the ENTER Key to generate required output.
 
 DETAILS ON EXAMPLE INVOCATION AND OUTPUT
 INPUT
@@ -27,17 +26,20 @@ A = {3,4,5,6}
 B = {10,15,19,20}
 
 CHALLENGES FACED
-1.Solving the problem using  O(1) extra space.
-2.Dealing with backtracking.
-3.Providing efficient solution.
+1.Solving the problem using  O(1) extra space was challenging.
+2.Learning and understanding the command line arguments was a challenge.
+3.Dealing with backtracking.
+4.Providing efficient solution.
+5.Solving the errors dealing with command line argumnets was challenging.
 
 LEARNT FROM THIS ASSIGNMENT
 1.How to write efficient code.
 2.Solving the problem mathematically.
 3.How to write clean code. 
+4.Basic executing command line argument.
 
 OPERATION
 1. The number of basic operations performed is given with the output.
 2. The time complexity for the problems is given in the form of comment in the source code.
 
->> Additional solution's have been added for question 1, 2, and 11 please refer the designated folder.
+>> Additional solution's have been added for question 1, and 2 please refer the designated folder.
