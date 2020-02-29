@@ -1,34 +1,31 @@
+//Program to perform Inplace Merge sort by using Command line argument
+//Including Header files
 # include <stdio.h>
 # include <stdlib.h>
-
-int main ()
+//Main function declaration
+int main (int argc,char *argv[])
 {
-	int a[100],b[100],m,n,i,j,k,l,temp;
+	//Local variable declaration
+	int i,j,k,l,temp,m,n;
 	printf ("Program to Perform Inplace Merge Sort\n");
-	printf ("Enter the size of array A\n");
-	scanf ("%d",&n);
-	printf ("Enter the size of array B\n");
-	scanf ("%d",&m);
-    if(n <= 0 || m <= 0){
-        printf("the input sizes should be always positive integers\n");
-        exit(0);
-    }
-	printf ("Enter %d elements of array A in sorted form\n",n);
-	for (i = 0;i < n;i++) {
-		scanf ("%d",&a[i]);
-        if (i > 0 && a[i-1] > a[i]) {
-            printf("Invalid input\n");
-            exit(0);
-        }
-    }
-	printf ("Enter %d elements of array B in sorted form\n",m);
-	for (i = 0;i < m;i++) {
-		scanf ("%d",&b[i]);
-        if (i > 0 && a[i-1] > a[i]) {
-            printf("Invalid input\n");
-            exit(0);
-        }
-    }
+	int p=1;
+	//Getting the values after converting the string values to  integer when  command line arguments are executed
+	n = atoi(argv[p++]);
+	m = atoi(argv[p++]);
+	//Dynamic memory allocation based on the size of array entered by the user
+	int a[n],b[m];
+	//Taking input into the arrays from the command line argument
+	for (i = 0;i < n;i++)
+	{
+		a[i]=atoi(argv[p]);
+		p++;
+	}
+	for (i = 0;i < m;i++)
+	{
+		b[i]=atoi(argv[p]);
+		p++;
+	}
+	//Printing the result before merge sorting
 	printf ("Before Merge sorting:\nA:\t");
 	for (i = 0;i < n;i++)
 		printf ("%d\t",a[i]);
@@ -36,6 +33,7 @@ int main ()
 	for (i = 0;i < m;i++)
 		printf ("%d\t",b[i]);
 	printf ("\n");
+	//Performing Merge Sort
 	for (i = 0;i < n;i++)
 	{
 		for (j = 0;j < m;j++)
@@ -62,6 +60,7 @@ int main ()
 			}
 		}
 	}
+	//Print the output after merge sort
 	printf ("After Merge Sort\nA:\t");
 	for (i = 0;i < n;i++)
 		printf ("%d\t",a[i]);
