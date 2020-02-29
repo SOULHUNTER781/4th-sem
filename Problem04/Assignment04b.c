@@ -4,28 +4,28 @@
 // The driven function for sorting the numbers.
 void sort(int b[],int n)
 {
-    int i,j,t;
-    for(i=0;i<n;i++)
-        for(j=0;j<n-i-1;j++)
+    	int i,j,t;
+    	for(i=0;i<n;i++)
+    	{
+	    for(j=0;j<n-i-1;j++)
             if(b[j]>b[j+1])
             {
                 t=b[j];
                 b[j]=b[j+1];
                 b[j+1]=t;
             }
-
-            return;
         }
+	return;
+}
 
 // The main function.
-int main()
+int main(int argc,char *argv[])
 {
-    int m,n,i,j,t;
-// Enter the sizes of the array here.
-    printf("enter m  ");
-    scanf("%d",&m);
-    printf("enter n  ");
-    scanf("%d",&n);
+    int m,n,i,j,t,r = 1;
+    n = atoi(argv[r]);
+    r++;
+    m = atoi(argv[r]);
+    r++;
     if(n <= 0 || m <= 0) {
         printf("The size of arrays should be positive integers\n");
         exit(0);
@@ -33,27 +33,25 @@ int main()
 
     int a[m],b[n];
 
-// Enter the elements of the array a.
-    printf("enter the elements of a ");
+// Storing  the elements of the array a.
     for(i=0;i<m;i++) {
-        scanf("%d",&a[i]);
-        if(i > 0 && a[i-1] > a[i]) {
+        a[i] = atoi(argv[r]);
+	r++;
+	if(i > 0 && a[i-1] > a[i]) {
             printf("Invalid input");
             exit(0);
         }
     }
-    sort(a,m);
 
-// Enter the elements of the array b.
-    printf("enter the elements of b ");
+// Storing  the elements of the array b.
     for(i=0;i<m;i++) {
-        scanf("%d",&b[i]);
-        if(i > 0 && a[i-1] > a[i]) {
+        b[i] = atoi(argv[r]);
+	r++;
+	if(i > 0 && a[i-1] > a[i]) {
             printf("Invalid input");
             exit(0);
         }
     }
-    sort(b,n);
 // The pointers i, j initialized for the array a and b.
     i=0;
     j=0;
@@ -80,5 +78,6 @@ int main()
 // printing the elements of the array b.    
     for(i=0;i<n;i++)
         printf("%d    ",b[i]);
-    return 0;
+  printf("\n");
+  return 0;
 }
