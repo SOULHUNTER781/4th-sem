@@ -1,14 +1,14 @@
 TEAM DETAILS
-NAME				USN
-1.Sudhanshu  Joshi 		1KS18CS102
-2.Sourabh Santosh Kamble 	1KS18CS097
-3.Sujay GS 			1KS18CS103
+NAME				        USN
+1.Sourabh Santosh Kamble 	1KS18CS097
+2.Sujay GS 			        1KS18CS103
+3.Sudhanshu  Joshi 		    1KS18CS102
 
 CONTRIBUTION
-NAME				CONTRIBUTION
-1.Sudhanshu Joshi 		Problem Logic and modification (Program 4 and 2).	
+NAME				        CONTRIBUTION
+1.Sudhanshu Joshi 		    Problem Logic and modification (Program 4 and 2).	
 2.Sourabh Santosh Kamble	Problem Logic and Debugging (Program 4 and 11). 
-3.Sujay GS 			Problem Logic and Coding(4th program and 1st program).
+3.Sujay GS 			        Problem Logic and Coding(4th program and 1st program).
 
 INSTRUCTIONS
 1.After the compilation.
@@ -40,3 +40,4 @@ OPERATION
 1. The number of basic operations performed is given with the output.
 2. The time complexity for the problems is given in the form of comment in the source code.
 
+>> Additional solution's have been added for question 2, 11, and 1 please refer the designated folder.
