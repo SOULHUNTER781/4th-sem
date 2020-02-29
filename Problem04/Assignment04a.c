@@ -16,15 +16,9 @@ int main (int argc,char *argv[])
 	int a[n],b[m];
 	//Taking input into the arrays from the command line argument
 	for (i = 0;i < n;i++)
-	{
-		a[i]=atoi(argv[p]);
-		p++;
-	}
+		a[i]=atoi(argv[p++]);
 	for (i = 0;i < m;i++)
-	{
-		b[i]=atoi(argv[p]);
-		p++;
-	}
+		b[i]=atoi(argv[p++]);
 	//Printing the result before merge sorting
 	printf ("Before Merge sorting:\nA:\t");
 	for (i = 0;i < n;i++)
