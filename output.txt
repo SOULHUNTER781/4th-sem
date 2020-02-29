@@ -12,3 +12,8 @@ TOTAL NUMBER OF BASIC OPERATIONS COMPUTATION OF TIME COMPLEXITY
 1. Comparison and Swapping.
 2. Time complexity of the program is O(mXn).
 
+The Screen-Shot's of the output are provided below.
+
+
+
+
