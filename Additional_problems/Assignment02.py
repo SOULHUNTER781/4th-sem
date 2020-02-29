@@ -13,18 +13,18 @@ def toh(s,t,t1,d,n):
 
             #printing the status of the tower's
             print("step {0}".format(count))
-            print(s)
-            print(t)
-            print(t1)
+            print(s, end = " ")
+            print(t, end = " ")
+            print(t1, end = " ")
             print(d)
         d.append(s.pop())
         count += 1
 
         #printing the status of the tower's
         print("step {0}".format(count))
-        print(s)
-        print(t)
-        print(t1)
+        print(s, end = " ")
+        print(t, end = " ")
+        print(t1, end = " ")
         print(d)
         if n - 1 != 0:
             d.append(t.pop())
@@ -32,15 +32,16 @@ def toh(s,t,t1,d,n):
 
             #printing the status of the tower's
             print("step {0}".format(count))
-            print(s)
-            print(t)
-            print(t1)
+            print(s, end = " ")
+            print(t, end = " ")
+            print(t1, end = " ")
             print(d)
 
         toh(t1,t,s,d,n-2)
 
 #Taking the number of disk's present.
-n = int(raw_input())
+print("Enter the no of disks :: ", end = " ")
+n = int(input())
 
 #different towers with initial status.
 s = [x for x in range(1,n+1)]
