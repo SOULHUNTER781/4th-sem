@@ -1,4 +1,6 @@
 # include <stdio.h>
+# include <stdlib.h>
+
 int main ()
 {
 	int a[100],b[100],m,n,i,j,k,l,temp;
@@ -7,12 +9,26 @@ int main ()
 	scanf ("%d",&n);
 	printf ("Enter the size of array B\n");
 	scanf ("%d",&m);
+    if(n <= 0 || m <= 0){
+        printf("the input sizes should be always positive integers\n");
+        exit(0);
+    }
 	printf ("Enter %d elements of array A in sorted form\n",n);
-	for (i = 0;i < n;i++)
+	for (i = 0;i < n;i++) {
 		scanf ("%d",&a[i]);
+        if (i > 0 && a[i-1] > a[i]) {
+            printf("Invalid input\n");
+            exit(0);
+        }
+    }
 	printf ("Enter %d elements of array B in sorted form\n",m);
-	for (i = 0;i < m;i++)
+	for (i = 0;i < m;i++) {
 		scanf ("%d",&b[i]);
+        if (i > 0 && a[i-1] > a[i]) {
+            printf("Invalid input\n");
+            exit(0);
+        }
+    }
 	printf ("Before Merge sorting:\nA:\t");
 	for (i = 0;i < n;i++)
 		printf ("%d\t",a[i]);

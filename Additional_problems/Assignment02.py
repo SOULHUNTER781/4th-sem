@@ -50,4 +50,7 @@ t2 = []
 d = []
 
 #Calling the driven function.
-toh(s,t1,t2,d,n)
+if n > 0:
+    toh(s,t1,t2,d,n)
+else:
+    print("Invalid Input")

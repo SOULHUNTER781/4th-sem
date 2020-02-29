@@ -52,19 +52,32 @@ int main()
     printf("Enter the size of array2 :: ");
     scanf("%d",&m);
 
+    if(n <= 0 || m <= 0) {
+        printf("The size of the arrays should be always positive\n");
+        exit(0);
+    }
+
     int a[n];
     int b[m];
 
     // Scanning the element's of the first array.
     printf("Enter the elements of first array :: ");
-    for(i = 0; i < n; i++)
+    for(i = 0; i < n; i++) {
         scanf("%d",&a[i]);
+        if (i > 0 && a[i-1] > a[i]) {
+            printf("Invalid input");
+            exit(0);
+        }
 
     // Scanning the element's of the second array.
     printf("Enter the elements of the second array :: ");
-    for(i = 0; i < m; i++)
+    for(i = 0; i < m; i++) {
         scanf("%d",&b[i]);
-
+        if (i > 0 && a[i-1] > a[i]) {
+            printf("Invalid input");
+            exit(0);
+        }
+    }
     printf("\n\n");
     // Calling the driven function for merging the two arrays.
     merge(a,b,n,m);

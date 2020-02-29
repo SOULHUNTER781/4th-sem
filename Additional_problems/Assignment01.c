@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 #define s(a) scanf("%d",&a)
 // The scanf function redefination for integers for simpler use.
 
@@ -43,6 +44,10 @@ int main()
     for(i = 0; i < n-1; i++)
     {
         s(arr[i]);
+        if(arr[i] > n) {
+            printf("Invalid input\n");
+            exit(0);
+        }
     }
 
     //Driven function is called here

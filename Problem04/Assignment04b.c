@@ -26,19 +26,33 @@ int main()
     scanf("%d",&m);
     printf("enter n  ");
     scanf("%d",&n);
+    if(n <= 0 || m <= 0) {
+        printf("The size of arrays should be positive integers\n");
+        exit(0);
+    }
 
-    int a[10],b[10];
+    int a[m],b[n];
 
 // Enter the elements of the array a.
     printf("enter the elements of a ");
-    for(i=0;i<m;i++)
+    for(i=0;i<m;i++) {
         scanf("%d",&a[i]);
+        if(i > 0 && a[i-1] > a[i]) {
+            printf("Invalid input");
+            exit(0);
+        }
+    }
     sort(a,m);
 
 // Enter the elements of the array b.
     printf("enter the elements of b ");
-    for(i=0;i<m;i++)
+    for(i=0;i<m;i++) {
         scanf("%d",&b[i]);
+        if(i > 0 && a[i-1] > a[i]) {
+            printf("Invalid input");
+            exit(0);
+        }
+    }
     sort(b,n);
 // The pointers i, j initialized for the array a and b.
     i=0;
